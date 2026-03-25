@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallel Black-Scholes Solver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* Top Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .nav .links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav .links a:hover {
+      color: var(--primary);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 60px 40px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .authors {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Sections */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 40px 60px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Nav -->
+  <div class="nav">
+    <div><strong>Parallel Black-Scholes Solver</strong></div>
+    <div class="links">
+      <a href="#summary">Summary</a>
+      <a href="#proposal">Proposal</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Parallel Black-Scholes Solver</h1>
+    <div class="authors">
+      Sneha Jaiswal • Anushka Parmanand
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+
+    <div id="summary" class="card">
+      <h2>Summary</h2>
+      <p>
+        We implement a parallel algorithm to solve the Black-Scholes equation for options pricing using the OpenMP programming model. Our approach parallelizes over a sparse grid with finite elements, which has a hierarchical tree structure and thus irregular memory access patterns. We also investigate the extent to which adaptive refinement, which improves pricing accuracy, degrades performance, and examine how well dynamic scheduling can recover speedup.
+      </p>
+    </div>
+
+    <div id="approach" class="card">
+      <h2>Proposal</h2>
+      <p>
+        <embed src="docs/prposal.pdf" width="100%" height="600px" type="application/pdf">
+        <p>
+          <a href="docs/proposal.pdf" target="_blank">
+            Download Proposal (PDF)
+          </a>
+        </p>
+     </p>
+    </div>
+
+  </div>
+
+  <footer>
+    15-418 Spring '26
+  </footer>
+
+</body>
+</html>
