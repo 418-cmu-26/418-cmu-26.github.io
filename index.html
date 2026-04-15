@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Parallel Black-Scholes Solver</title>
+  <title>Parallel Black-Scholes Solver on Adaptive Sparse Grids</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -118,16 +118,17 @@
 
   <!-- Top Nav -->
   <div class="nav">
-    <div><strong>Parallel Black-Scholes Solver</strong></div>
+    <div><strong>Parallel Black-Scholes Solver on Adaptive Sparse Grids</strong></div>
     <div class="links">
       <a href="#summary">Summary</a>
       <a href="#proposal">Proposal</a>
+      <a href="#milestone">Milestone</a>
     </div>
   </div>
 
   <!-- Hero -->
   <div class="hero">
-    <h1>Parallel Black-Scholes Solver</h1>
+    <h1>Parallel Black-Scholes Solver on Adaptive Sparse Grids</h1>
     <div class="authors">
       Sneha Jaiswal • Anushka Parmanand
     </div>
@@ -139,7 +140,7 @@
     <div id="summary" class="card">
       <h2>Summary</h2>
       <p>
-        We implement a parallel algorithm to solve the Black-Scholes equation for options pricing using the OpenMP programming model. Our approach parallelizes over a sparse grid with finite elements, which has a hierarchical tree structure and thus irregular memory access patterns. We also investigate the extent to which adaptive refinement, which improves pricing accuracy, degrades performance, and examine how well dynamic scheduling can recover speedup.
+        We implement a parallel algorithm to solve the Black-Scholes equation for options pricing using the OpenMP programming model. Our approach parallelizes over a sparse grid with finite elements, which has a hierarchical tree structure and thus irregular memory access patterns. We also investigate the extent to which adaptive refinement, which improves pricing accuracy, degrades performance and examine how well dynamic scheduling can recover speedup.
       </p>
     </div>
 
@@ -149,6 +150,16 @@
       <p>
         <a href="proposal.pdf" target="_blank">
           Download Proposal (PDF)
+        </a>
+      </p>
+    </div>
+
+    <div id="approach" class="card">
+      <h2>Milestone</h2>
+      <embed src="milestone.pdf" width="100%" height="600px" type="application/pdf">
+      <p>
+        <a href="milestone.pdf" target="_blank">
+          Download Milestone (PDF)
         </a>
       </p>
     </div>
